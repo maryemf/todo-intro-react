@@ -1,0 +1,102 @@
+.todos-error {
+  margin-top: 50px;
+  font-family: 'Montserrat';
+}
+.error-card {
+    max-width: 450px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+    margin: 0 auto;
+  }
+  
+  .error-card-title {
+    font-weight: 600;
+    color: rgb(31 41 55);
+  }
+  
+  .error-card-description {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(75 85 99);
+  }
+  
+  .error-card-description a {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246);
+  }
+  
+  .error-card-description a:hover {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+  }
+  
+  .error-card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .error-card-pref {
+    font-family: 'Montserrat';
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(31 41 55 );
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    background-color: transparent;
+  }
+  
+  .error-card-pref:hover {
+    color: rgb(156 163 175);
+  }
+  
+  .error-card-pref:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  .error-card-accept {
+    font-family: 'Montserrat';
+    font-size: 0.75rem;
+    line-height: 1rem;
+    background-color: #1e0799c2;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .error-card-accept:hover {
+    background-color: rgb(52 6 116);
+  }
+  
+  .error-card-accept:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  .error-card-svg-error {
+    width: 50px;
+    height: 50px;
+  }
+
+  .error-card-svg-computer {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+  }

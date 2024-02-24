@@ -1,0 +1,27 @@
+.svg-check {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-remove, .svg-oval {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-check:hover {
+    width: 32px;
+    height: 32px;
+}
+
+.svg-remove:hover, .svg-oval:hover {
+    width: 26px;
+    height: 26px;
+}
+
+.svg-remove:hover {
+    fill: red;
+}
+
+.svg-oval:hover {
+    fill: green;
+}
