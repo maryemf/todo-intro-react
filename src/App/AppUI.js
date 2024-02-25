@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable no-lone-blocks */
+import React, { useContext } from 'react';
 import { TodoCounter } from '../Components/TodoCounter';
 import { TodoSearch } from '../Components/TodoSearch';
 import { TodoList } from '../Components/TodoList';
@@ -8,36 +9,25 @@ import { TodosLoading } from '../Components/TodosLoading';
 // import { TodosLoadingSk } from '../Components/TodosLoadingSk';
 import { TodosError } from '../Components/TodosError';
 import { TodosEmpty } from '../Components/TodosEmpty';
+import { TodoContext } from '../TodoContext';
+import { CreateTodoButton } from '../Components/CreateTodoButton';
+import { Modal } from '../Components/Modal';
+import { TodoForm } from '../Components/TodoForm';
 
-function AppUI({loading, error, todos, saveTodos, totalTodos, completedTodos, searchValue, setSearchValue, filteredTodos, completeTodo, removeTodo})
+function AppUI()
 {    
+    const {loading, error, totalTodos, filteredTodos, completeTodo, removeTodo, openModal} = useContext(TodoContext)
     return (
         <React.Fragment>
-          <TodoHeader
-            todos={todos}
-            saveTodos={saveTodos}
-          />
-          
-          {loading && <TodosLoading />}
-          {/* Skeleton */}
-          {/* {loading && 
-          <>
-            <TodosLoadingSk />
-            <TodosLoadingSk />
-            <TodosLoadingSk />
-          </>
-          } */}
-          
+          <TodoHeader />          
+          {loading && <TodosLoading />}                    
           {error && <TodosError />}
           {(!loading && !error) &&  
             <>
                 {totalTodos > 0 && 
                 <>
-                    <TodoCounter total={totalTodos} completed={completedTodos} />
-                    <TodoSearch 
-                        searchValue={searchValue}
-                        setSearchValue={setSearchValue}
-                    />
+                    <TodoCounter />
+                    <TodoSearch />
                 </>
                 }
                 <TodoList>
@@ -54,6 +44,13 @@ function AppUI({loading, error, todos, saveTodos, totalTodos, completedTodos, se
                 </TodoList>
             </>
             }
+            {/* <CreateTodoButton />
+            {openModal && 
+                <Modal>
+                    <TodoForm />
+                </Modal>
+            } */}
+             
         </React.Fragment>
     );
 }

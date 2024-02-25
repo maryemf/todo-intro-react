@@ -1,13 +1,10 @@
 import { CreateTodo } from '../CreateTodo';
 import  './TodoHeader.css';
-function TodoHeader({todos, saveTodos}){
+function TodoHeader(){
     return (
         <header className='todo-header'>
-            <h1>To Do List</h1>
-            <CreateTodo 
-                todos={todos}
-                saveTodos={saveTodos}
-            />
+            <h1>To Do Machine</h1>
+            <CreateTodo />
         </header>        
     );
 }
