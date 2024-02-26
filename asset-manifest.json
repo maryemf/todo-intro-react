@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/todo-intro-react/static/css/main.2edb691a.css",
+    "main.js": "/todo-intro-react/static/js/main.40229f55.js",
+    "static/media/error-text.svg": "/todo-intro-react/static/media/error-text.6cf77620338716b663bddf61950cf351.svg",
+    "static/media/remove.svg": "/todo-intro-react/static/media/remove.6df83d02f1a42ed2bbbd78a25ab43ad6.svg",
+    "static/media/check.svg": "/todo-intro-react/static/media/check.e2c3d60ea43bf5bd2352c25c97ff65ca.svg",
+    "static/media/computer-fail.svg": "/todo-intro-react/static/media/computer-fail.c963a86129bd7f548e01082d04f005a1.svg",
+    "static/media/oval.svg": "/todo-intro-react/static/media/oval.45a8a660ba478b0e72ad047a6b41df0d.svg",
+    "index.html": "/todo-intro-react/index.html",
+    "main.2edb691a.css.map": "/todo-intro-react/static/css/main.2edb691a.css.map",
+    "main.40229f55.js.map": "/todo-intro-react/static/js/main.40229f55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2edb691a.css",
+    "static/js/main.40229f55.js"
+  ]
+}
